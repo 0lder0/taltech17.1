@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="et">
+<head>
+    <title>Arvutused</title>
+    <script src="arvutused.js"></script>
+    <script>
+        let calculator, figure;
+        function startPage(){
+            calculator=new InchesToCm();
+            figure=new Figure(calculator, canvas1.getContext("2d"));
+        }
+    </script>
+    <meta charset="utf-8" />
+</head>
+<body onload="startPage()">
+<canvas id="canvas1" width="400" height="300"></canvas>
+</body>
+</html>
